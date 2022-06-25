@@ -1,0 +1,16 @@
+"High score"
+800
+"Save file"
+./examples/map3.txt
+"Enemies"
+2
+"Breakables"
+70
+"Duel rounds"
+5
+"Bonus chance"
+10
+"Bonus mega bombs"
+1
+"Bonus speed"
+2

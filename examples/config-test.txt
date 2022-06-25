@@ -1,0 +1,18 @@
+"High score"
+600
+"Save file"
+./examples/map4.txt
+"Enemies"
+5
+"Breakables"
+100
+"Error label"
+"Duel rounds"
+5
+"Bonus chance"
+100
+"Bonus mega bombs"
+1
+"Bonus speed"
+2
+"Another error label"
