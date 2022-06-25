@@ -1,12 +1,18 @@
-# About the game
+# Bomberman
 
 
 ## Gameplay
 
 Player controls the bomberman character using controls. They place bombs to destroy wooden walls and enemies. The player has
-only one life per game, but in return they get unlimited number of bombs. Only one bomb can be placed per key press though.
+only one life per game, but in return they get unlimited number of bombs. However, only one bomb can be placed per key press.
 A destroyed wooden wall can sometimes drop a bonus, whose effect will last for the rest of the game level. The same bonuses
 cannot stack on each other. There are only two types of bonuses: **mega bombs** and **speed up**.
+
+
+## Launching
+
+The game runs on linux, you can build and run it by typing 'make run' into the terminal.
+For creating a documentation, type 'make doc'.
 
 
 ### The game offers two game modes:
@@ -15,7 +21,7 @@ cannot stack on each other. There are only two types of bonuses: **mega bombs** 
     - A game against the computer
     - The player has to kill spawned enemies, they cannot place bombs, but they will kill the player on touch
     - After killing all enemies a door to another level will appear
-    - This game mode cannot be 'won', instead the player is trying to achieve overcome themselves using the score number
+    - This game mode cannot be 'won', instead the player is trying to overcome themselves through the high score
     - Score points can be gained by killing enemies, the game will keep the high score troughout game launches
 
 ![The singleplayer mode](./assets/Singleplayer.png)
@@ -32,18 +38,18 @@ cannot stack on each other. There are only two types of bonuses: **mega bombs** 
 
 ## Working with files
 
-The game in a singleplayer mode can be saven at any given point into a file by pressing F5. Only one save file can exist,
-meaning that a new save file will rewrite the old one. The map as well as the current score will be saven into a simple
+The game in a singleplayer mode can be saved at any given point into a file by pressing F5. Only one save file can exist,
+meaning that a new save file will rewrite the old one. The map as well as the current score will be saved into a simple
 format of a .txt file.
 
 A simple format of a configuration file was implemented for the game. It must contain these items:
 - **High score**
 - **Save file** *a path to where the map will save or load from*
-- **Enemies** *the number generated into the map*
-- **Breakables** *the number generated into the map*
-- **Duel rounds** *number of levels in duel mode*
-- **Bonus chance** *percentual chance of its drop from destroyed blocks*
-- **Bonus mega bombs** *additional blocks that will explode*
+- **Enemies** *the number of enemies generated into the map*
+- **Breakables** *the number of breakables generated into the map*
+- **Duel rounds** *number of levels in the duel mode*
+- **Bonus chance** *percentual chance of bonus drop from destroyed blocks*
+- **Bonus mega bombs** *number of additional blocks to explode*
 - **Bonus speed** *additional speed*
 
 In case the configuration file is corrupted or contains invalid values, the game will not start.
@@ -58,8 +64,8 @@ and a couple of clickable buttons:
 - **Duel** - starts a duel between two local players
 - **Exit** - exits the game (as well as clicking the X button in the corner of the game window)
 
-The menu can be called at any point of the game by pressing ESC. It will discard the current game and won't count the score into
-the high score though.
+The menu can be called at any point of the game by pressing ESC. However, it will discard the current game and won't count the score into
+the high score.
 
 ![The main menu](./assets/MainMenu.png)
 
@@ -92,7 +98,7 @@ For the game to function properly you need to install these packages:
 
 ## Ownership
 
-The game was implemented by myself only, I also drew every image in the game.
+The game was implemented solely by me, I also drew every image in the game.
 
 #### Quotations of the files I do not own:
 
